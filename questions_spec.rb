@@ -58,7 +58,6 @@ describe 'the Friday test :)' do
   specify 'get_first_half_of_string' do
     a = get_first_half_of_string 'banana'
     b = get_first_half_of_string 'apple'
-
     expect(a).to eq 'ban'
     expect(b).to eq 'app'
   end
@@ -111,7 +110,7 @@ describe 'the Friday test :)' do
     expect(n).to eq 17
   end
 
-  specify 'get_elements_until_greater_than_five' do
+  fit 'get_elements_until_greater_than_five' do
     n = get_elements_until_greater_than_five [1, 3, 5, 4, 1, 2, 6, 2, 1, 3, 7]
     expect(n).to eq [1, 3, 5, 4, 1, 2]
   end
